@@ -18,7 +18,9 @@ Sesto is a library that I build since I first met PHP and start my career as sel
 The library is an evolution of a previous framework called "Naranza Framework" which I have now dismissed.
 It allows to create PHP web-based application easily whithout adding any extra layer of complexity or complicated useless OOP patterns.
 Developers can create their own routing algorithm, validation, or use external libraries as they like.
+
 Website (under costruction): https://sesto.naranza.org/
+
 Source code is on Gitlab: https://gitlab.com/naranza
 
 ## Bella CMS
@@ -38,6 +40,8 @@ Not surprisingly, just few hand raised.
 When I asked how many remember what is the syntax of an achor in HTML, I saw all hands raised.
 Satao aims to answer this problem.
 It allows you to leverage your knowledge of HTML by simplifying the syntax.
+
 Website (under costruction): https://satao.page/
+
 Source code is on Gitlab: https://gitlab.com/adavanzo/satao
 
