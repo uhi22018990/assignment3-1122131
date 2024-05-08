@@ -7,21 +7,40 @@
 The website is based on HTML5 and lightweight CSS library I developed called Toco (`https://satao.page/css/toco-core.css`).
 When I first developed my first CSS boilerplate in 2009, the CSS grid system at the time was known as "Fluid baseline grid".
 Bootstrap was not invented yet.
-I remmeber a wonderful work done by Josh Hopkins and 40 Horse with "Fluid Baseline Grid v1.0.1". (https://github.com/thedayhascome/Fluid-Baseline-Grid)
+I remember a wonderful work done by Josh Hopkins and 40 Horse with "Fluid Baseline Grid v1.0.1". (https://github.com/thedayhascome/Fluid-Baseline-Grid)
 Bootstrap and Fundation are now the most famous CSS frameworks out there.
-However, in my honest opinion, they are bloated like a brand new Samsung phone.
-Toco shares the same spirit of pure.css (https://purecss.io/), light and simple.
+However, in my honest opinion, they are a bit bloated like a brand new Samsung phone.
+Toco, a simple CSS grid system based on Flexbox, shares the same spirit of pure.css (https://purecss.io/), light and simple.
 In less then 3K it defines grids for 1, 2, 3, 4, 5, 12, 24 columns, mobile or desktop.
 
 ### Sesto PHP library
-Sesto is a library that I build since I first met PHP and start my career as self-employed web developer.
+Sesto is the result of long-work since I first met PHP and start my career as self-employed web developer.
 The library is an evolution of a previous framework called "Naranza Framework" which I have now dismissed.
 It allows to create PHP web-based application easily whithout adding any extra layer of complexity or complicated useless OOP patterns.
+The library is divided in highly decoupled modules. There are few exceptions like the module app.
+The module permits to call an application or create web applications with a tiny memory and resource footprint.
 Developers can create their own routing algorithm, validation, or use external libraries as they like.
 
-Website (under costruction): https://sesto.naranza.org/
+Example of bootstrap script for Bella CMS based website
 
-Source code is on Gitlab: https://gitlab.com/naranza
+```
+
+/* setup the system dir */
+$sys_dir = realpath(__DIR__ . '/..');
+
+require $sys_dir . '/lib/sesto/initme.php';
+require $sys_dir . '/lib/bella/initme.php';
+require BELLA_DIR . '/engine.php';
+require SESTO_DIR . '/app/run.php';
+
+$error = '';
+sesto_app_run($sys_dir, 'bella_engine', [], '', false, $error);
+
+
+```
+
+* Website (under costruction): https://sesto.naranza.org/
+* Source code is on Gitlab: https://gitlab.com/naranza
 
 ## Bella CMS
 With my recent works like Sesto, Bateo, Toco etc, I always asked myself how to create a beautiful documentation website.
@@ -41,7 +60,6 @@ When I asked how many remember what is the syntax of an achor in HTML, I saw all
 Satao aims to answer this problem.
 It allows you to leverage your knowledge of HTML by simplifying the syntax.
 
-Website (under costruction): https://satao.page/
-
-Source code is on Gitlab: https://gitlab.com/adavanzo/satao
+* Website (under costruction): https://satao.page/
+* Source code is on Gitlab: https://gitlab.com/adavanzo/satao
 
